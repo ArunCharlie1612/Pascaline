@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 245, 245);
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    height: 100vh;
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cal{
+    display: grid;
+    grid-template-columns:repeat(4,68px);
+    background-color: #ecf0f3;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 12px #ffffff,5px 5px 12px rgb(0,0,0,0.16);
+}
+input{
+    grid-column: span 4;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff,5px 5px 12px rgb(0,0,0,0.16) ;
+    border: none;
+    height: 80px;
+    width: 260px;
+    font-size: 50px;
+    color: #000;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: end;
+    padding: 3px;
+}
+button{
+    height: 48px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff,5px 5px 12px rgb(0,0,0,0.16) ;
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 15px;
+}
+button:hover{
+    background-color: aliceblue;
+}
+/* .ans{
+    background-color: #333333;
+    color: #ffffff;
+    box-shadow: none;
+}
+.ans:hover{
+    background-color: #ecf0f3;
+    color: #000;
+    box-shadow: inset -5px -5px 12px #ffffff,5px 5px 12px rgb(0,0,0,0.16) ;
+} */
+.cal{
+    border: 1px solid #000;
+}
+.Cal_img{
+    animation: pulse 2s linear infinite;
+  }
+  @keyframes pulse {
+    0% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    50% {
+       -webkit-transform: scale(0.8);
+       transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+       transform: scale(1);
+    }
+    }
+.heading{
+    color:rgba(97, 79, 243, 1);
+}
+.heading{
+    background-color: rgba(97, 79, 243, 1);
+    color: #fff;
+    text-transform: capitalize;
+    padding: 15px 35px;
+    border-radius: 30px;
+    margin-top: 10px;
+    border: none;
+}
+.heading:hover{
+    background-color: #ecf0f3;
+    color: rgba(97, 79, 243, 1);
+
+    animation: forwards;
+    box-shadow: inset -5px -5px 12px #ffffff,5px 5px 12px rgb(0,0,0,0.16) ;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.cal{
+    display: none;
+}
+
+
